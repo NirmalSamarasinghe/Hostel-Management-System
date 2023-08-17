@@ -28,17 +28,17 @@
             <Image url="@../asset/image/hostel3-removebg-preview.png" />
          </image>
       </ImageView>
-      <JFXTextField alignment="BOTTOM_LEFT" focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="328.0" prefHeight="47.0" prefWidth="431.0" promptText="Enter your User Name" unFocusColor="BLACK">
+      <JFXTextField fx:id="txtUserName" alignment="BOTTOM_LEFT" focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="328.0" prefHeight="47.0" prefWidth="431.0" promptText="Enter your User Name" unFocusColor="BLACK">
          <font>
             <Font size="21.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField alignment="BOTTOM_LEFT" focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="423.0" prefHeight="47.0" prefWidth="431.0" promptText="Enter Your Password" unFocusColor="BLACK">
+      <JFXPasswordField fx:id="txtPassword" alignment="BOTTOM_LEFT" focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="423.0" prefHeight="47.0" prefWidth="431.0" promptText="Enter Your Password" unFocusColor="BLACK">
          <font>
             <Font size="21.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton buttonType="RAISED" layoutX="206.0" layoutY="510.0" prefHeight="38.0" prefWidth="172.0" ripplerFill="#ff6b6b" style="-fx-background-color: #7bb9db; -fx-background-radius: 18;" text="Login">
+      <JFXButton buttonType="RAISED" layoutX="206.0" layoutY="510.0" onAction="#btnLoginOnAction" prefHeight="38.0" prefWidth="172.0" ripplerFill="#ff6b6b" style="-fx-background-color: #7bb9db; -fx-background-radius: 18;" text="Login">
          <font>
             <Font name="Times New Roman Bold" size="28.0" />
          </font>
@@ -48,7 +48,7 @@
             <Image url="@../asset/image/d24-hostel-low-resolution-logo-black-on-transparent-background.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="607.0" prefHeight="38.0" prefWidth="481.0" ripplerFill="#ff6b6b" style="-fx-background-color: #7bb9db; -fx-background-radius: 18;" text="New Here ?">
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="607.0" onAction="#btnNewHereOnAction" prefHeight="38.0" prefWidth="481.0" ripplerFill="#ff6b6b" style="-fx-background-color: #7bb9db; -fx-background-radius: 18;" text="New Here ?">
          <font>
             <Font size="14.0" />
          </font>
