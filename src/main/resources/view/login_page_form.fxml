@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="704.0" fitWidth="1206.0" layoutX="-1.0" pickOnBounds="true" smooth="false">
          <image>
-            <Image url="@../asset/backgroun_hom-Page.jpg" />
+            <Image url="@../asset/image/backgroun_hom-Page.jpg" />
          </image>
       </ImageView>
       <Rectangle arcHeight="110.0" arcWidth="110.0" fill="WHITE" height="616.0" layoutX="36.0" layoutY="43.0" opacity="0.8" stroke="#0684c3" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="OUTSIDE" width="520.0" />
@@ -25,7 +25,7 @@
       </Text>
       <ImageView fitHeight="438.0" fitWidth="602.0" layoutX="579.0" layoutY="59.0" pickOnBounds="true" smooth="false">
          <image>
-            <Image url="@../asset/hostel3-removebg-preview.png" />
+            <Image url="@../asset/image/hostel3-removebg-preview.png" />
          </image>
       </ImageView>
       <JFXTextField alignment="BOTTOM_LEFT" focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="328.0" prefHeight="47.0" prefWidth="431.0" promptText="Enter your User Name" unFocusColor="BLACK">
@@ -45,7 +45,7 @@
       </JFXButton>
       <ImageView fitHeight="101.0" fitWidth="342.0" layoutX="133.0" layoutY="106.0" pickOnBounds="true" smooth="false">
          <image>
-            <Image url="@../asset/d24-hostel-low-resolution-logo-black-on-transparent-background.png" />
+            <Image url="@../asset/image/d24-hostel-low-resolution-logo-black-on-transparent-background.png" />
          </image>
       </ImageView>
       <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="607.0" prefHeight="38.0" prefWidth="481.0" ripplerFill="#ff6b6b" style="-fx-background-color: #7bb9db; -fx-background-radius: 18;" text="New Here ?">

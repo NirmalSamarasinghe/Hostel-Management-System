@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,23 +11,27 @@
    <children>
       <ImageView fitHeight="710.0" fitWidth="1204.0" layoutY="-3.0" pickOnBounds="true" smooth="false">
          <image>
-            <Image url="@../asset/backgroun_hom-Page.jpg" />
+            <Image url="@../asset/image/backgroun_hom-Page.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="88.0" fitWidth="381.0" layoutX="448.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../asset/d24-hostel-low-resolution-logo-black-on-transparent-background.png" />
+            <Image url="@../asset/image/d24-hostel-low-resolution-logo-black-on-transparent-background.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="392.0" fitWidth="523.0" layoutX="365.0" layoutY="26.0" pickOnBounds="true" smooth="false">
          <image>
-            <Image url="@../asset/student-dormitory-removebg-preview.png" />
+            <Image url="@../asset/image/student-dormitory-removebg-preview.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="574.0" layoutY="591.0" onAction="#btnStartOnAction" prefHeight="25.0" prefWidth="118.0" ripplerFill="#ff6b6b" style="-fx-background-color: #7bb9db; -fx-background-radius: 20;" text="START">
+      <JFXButton buttonType="RAISED" layoutX="538.0" layoutY="594.0" onAction="#btnStartOnAction" prefHeight="55.0" prefWidth="212.0" ripplerFill="#f2f0f0" stylesheets="@../asset/style/button.css" text="START">
          <font>
             <Font name="Bodoni MT Black" size="15.0" />
          </font>
+         <styleClass>
+            <String fx:value="button" />
+            <String fx:value="button" />
+         </styleClass>
       </JFXButton>
    </children>
 </AnchorPane>
