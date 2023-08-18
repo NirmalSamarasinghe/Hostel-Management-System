@@ -1,0 +1,43 @@
+.button {
+    -fx-min-height: 50px;
+    -fx-min-width: 200px;
+    -fx-max-height: 50px;
+    -fx-max-width: 200px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-border-color: #252525;
+    -fx-border-width: 2px;
+    -fx-border-radius: 30px;
+    -fx-text-fill: #333;
+    -fx-background-radius: 30px;
+    -fx-transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(one-pass-box, rgba(37, 37, 37, 0.5), 1, 1, 0, 0);
+    -fx-text-fill: #282727;
+    -fx-border-color: rgba(252, 252, 252, 0);
+}
+
+.btn-txt {
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 4px;
+}
+
+.type1 {
+    -fx-background-color: transparent;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+.type1:hover::after {
+    -fx-background-color: #333;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-visible: true;
+    -fx-scale-x: 100;
+    -fx-scale-y: 100;
+    -fx-translate-x: 2px;
+    -fx-translate-y: 0;
+    -fx-transition: all 0.5s ease-in-out;
+}
