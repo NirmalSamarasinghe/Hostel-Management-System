@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddStudentFormController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="538.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD STUDETN" textAlignment="RIGHT" wrappingWidth="272.2825012207031">
+         <font>
+            <Font name="Nirmala UI" size="40.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtStudentId" layoutX="31.0" layoutY="146.0" prefHeight="39.0" prefWidth="287.0" promptText="Student ID" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="351.0" layoutY="147.0" prefHeight="39.0" prefWidth="287.0" promptText="Name" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="31.0" layoutY="215.0" prefHeight="39.0" prefWidth="287.0" promptText="Address" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" layoutX="350.0" layoutY="215.0" prefHeight="39.0" prefWidth="287.0" promptText="Contact" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXDatePicker fx:id="txtDoB" defaultColor="#064c72" layoutX="31.0" layoutY="282.0" prefHeight="35.0" prefWidth="286.0" promptText="Date of Birth" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXDatePicker>
+      <Line endX="673.0" layoutX="135.0" layoutY="48.0" startX="-123.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="40.0" layoutX="345.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-background-radius: 10; -fx-background-color: ffffff;" width="297.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Rectangle>
+      <JFXRadioButton fx:id="rBtnMale" layoutX="445.0" layoutY="291.0" text="Male">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rBtnFemale" layoutX="539.0" layoutY="290.0" text="Female">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <Label layoutX="352.0" layoutY="285.0" prefHeight="27.0" prefWidth="80.0" text="Gender">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView layoutX="16.0" layoutY="383.0" prefHeight="305.0" prefWidth="794.0">
+        <columns>
+          <TableColumn fx:id="colStudentId" prefWidth="105.66667175292969" text="Student ID" />
+          <TableColumn fx:id="colName" prefWidth="134.00001525878906" text="Student Name" />
+            <TableColumn fx:id="colAddress" prefWidth="149.99998474121094" text="Studetn Address" />
+            <TableColumn fx:id="colContact" prefWidth="145.0" text="Student Contact" />
+            <TableColumn fx:id="colDoB" prefWidth="135.0" text="Date of Birth" />
+            <TableColumn fx:id="colGender" prefWidth="117.0" text="Gender" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="679.0" layoutY="159.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text="    ADD" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/output-onlinegiftools.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="679.0" layoutY="212.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/output-onlinegiftools%20(1).gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="679.0" layoutY="264.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text=" Delete" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/output-onlinegiftools%20(2).gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="16.0" layoutY="55.0" onAction="#txtSerachOnAction" prefHeight="9.0" prefWidth="256.0" promptText="Search" style="-fx-border-radius: 25; -fx-background-color: ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
