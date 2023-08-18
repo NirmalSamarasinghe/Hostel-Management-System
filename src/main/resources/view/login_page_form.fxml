@@ -23,7 +23,7 @@
             <Font name="Times New Roman Bold" size="87.0" />
          </font>
       </Text>
-      <ImageView fitHeight="438.0" fitWidth="602.0" layoutX="579.0" layoutY="59.0" pickOnBounds="true" smooth="false">
+      <ImageView fx:id="img1" fitHeight="438.0" fitWidth="602.0" layoutX="579.0" layoutY="59.0" pickOnBounds="true" smooth="false">
          <image>
             <Image url="@../asset/image/hostel3-removebg-preview.png" />
          </image>
