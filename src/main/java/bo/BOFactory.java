@@ -1,5 +1,6 @@
 package bo;
 
+import bo.custom.impl.RoomBoImpl;
 import bo.custom.impl.StudentBOImpl;
 import bo.custom.impl.UserBOImpl;
 //import bo.custom.impl.UserBoImpl;
@@ -16,7 +17,7 @@ public class BOFactory {
     }
 
     public enum BOTypes{
-        USER,STUDENT
+        USER,STUDENT,ROOM
     }
 
     public SuperBo getBO(BOTypes boTypes){
@@ -25,6 +26,8 @@ public class BOFactory {
                 return new UserBOImpl();
             case STUDENT:
                 return new StudentBOImpl();
+            case ROOM:
+                return new RoomBoImpl();
             default:
                 return null;
         }

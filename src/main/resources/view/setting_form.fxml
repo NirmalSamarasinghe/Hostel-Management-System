@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingFormController">
+   <children>
+      <Label layoutX="534.0" layoutY="10.0" text="Manage Users" textFill="#112d4e">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Line endX="627.0" endY="-40.33333206176758" layoutX="177.0" layoutY="104.0" startX="-150.3333282470703" startY="-40.33331298828125" />
+      <JFXTextField fx:id="txtStudentId" layoutX="41.0" layoutY="117.0" prefHeight="39.0" prefWidth="287.0" promptText="User ID" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName1" layoutX="38.0" layoutY="268.0" prefHeight="39.0" prefWidth="287.0" promptText="Password Hint" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName11" layoutX="40.0" layoutY="195.0" prefHeight="39.0" prefWidth="287.0" promptText="Password" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <TableView fx:id="tblUsers" layoutX="25.0" layoutY="352.0" onMouseClicked="#tblUsersOnMouseClicked" prefHeight="335.0" prefWidth="764.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="261.0" text="User ID" />
+            <TableColumn fx:id="colPassword" prefWidth="240.33334350585938" text="Password" />
+            <TableColumn fx:id="colPasswordHInt" prefWidth="261.6666564941406" text="Password Hint" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="649.0" layoutY="129.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text="    ADD" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/output-onlinegiftools.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="649.0" layoutY="182.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asset/image/output-onlinegiftools%20(1).gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="649.0" layoutY="234.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text=" Delete" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asset/image/output-onlinegiftools%20(2).gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

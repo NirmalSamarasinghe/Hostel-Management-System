@@ -11,23 +11,64 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root" prefHeight="671.0" prefWidth="1233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBordeFormController">
+<AnchorPane prefHeight="669.0" prefWidth="1247.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBordeFormController">
    <children>
-      <AnchorPane layoutX="1.0" prefHeight="652.0" prefWidth="376.0">
+      <AnchorPane fx:id="root" layoutX="383.0" layoutY="-4.0" prefHeight="670.0" prefWidth="842.0">
          <children>
-            <ImageView fitHeight="700.0" fitWidth="376.0" layoutY="-3.0" pickOnBounds="true" smooth="false">
+            <ImageView fitHeight="218.0" fitWidth="836.0" layoutX="2.0" layoutY="451.0" pickOnBounds="true" smooth="false">
                <image>
-                  <Image url="@../asset/image/backgroun_hom-Page.jpg" />
+                  <Image url="@../asset/image/1688467087_thump-removebg-preview.png" />
                </image>
+            </ImageView>
+            <Rectangle fill="#dadada" height="129.0" layoutX="463.0" layoutY="169.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="268.0">
+               <effect>
+                  <DropShadow color="#317e93" />
+               </effect>
+            </Rectangle>
+            <Rectangle fill="#dadada" height="129.0" layoutX="69.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="268.0">
+               <effect>
+                  <DropShadow color="#317e93" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="510.0" layoutY="174.0" text="Students">
+               <font>
+                  <Font name="Times New Roman" size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="141.0" layoutY="188.0" text="Rooms">
+               <font>
+                  <Font name="Times New Roman" size="44.0" />
+               </font>
+            </Label>
+            <Text layoutX="526.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBoard">
+               <font>
+                  <Font name="Nirmala UI" size="62.0" />
+               </font>
+            </Text>
+            <Label alignment="CENTER" layoutX="535.0" layoutY="225.0" prefHeight="58.0" prefWidth="114.0" text="01">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="148.0" layoutY="238.0" prefHeight="58.0" prefWidth="114.0" text="01">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane" layoutX="1.0" layoutY="-1.0" prefHeight="666.0" prefWidth="384.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="696.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="386.0">
                <effect>
                   <DropShadow />
-               </effect></ImageView>
-            <ImageView fitHeight="78.0" fitWidth="270.0" layoutX="55.0" layoutY="61.0" pickOnBounds="true" smooth="false">
+               </effect>
+            </Rectangle>
+            <ImageView fitHeight="78.0" fitWidth="270.0" layoutX="55.0" layoutY="39.0" pickOnBounds="true" smooth="false">
                <image>
                   <Image url="@../asset/image/d24-hostel-low-resolution-logo-black-on-transparent-background.png" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="113.0" layoutY="290.0" onAction="#btnAddStudentOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="Add Students" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="113.0" layoutY="249.0" onAction="#btnAddStudentOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="Add Students" textFill="WHITE">
                <font>
                   <Font name="Playbill" size="25.0" />
                </font>
@@ -42,7 +83,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="111.0" layoutY="372.0" onAction="#btnRoomsOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="ROOMS" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="111.0" layoutY="333.0" onAction="#btnRoomsOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="ROOMS" textFill="WHITE">
                <font>
                   <Font name="Playbill" size="25.0" />
                </font>
@@ -57,7 +98,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="109.0" layoutY="454.0" onAction="#btnReservationOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="Reservation" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="109.0" layoutY="418.0" onAction="#btnReservationOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="Reservation" textFill="WHITE">
                <font>
                   <Font name="Playbill" size="25.0" />
                </font>
@@ -72,7 +113,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="-1.0" layoutY="639.0" onAction="#btnLogOutOnAction" prefHeight="58.0" prefWidth="377.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9; -fx-background-radius: 0;" text="LogOut" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="59.0" layoutY="604.0" onAction="#btnLogOutOnAction" prefHeight="58.0" prefWidth="249.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9; -fx-background-radius: 0;" text="LogOut" textFill="WHITE">
                <font>
                   <Font name="Playbill" size="30.0" />
                </font>
@@ -87,7 +128,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="115.0" layoutY="208.0" onAction="#btnRoomsOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="Dashboard" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="115.0" layoutY="165.0" onAction="#btnRoomsOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="Dashboard" textFill="WHITE">
                <font>
                   <Font name="Playbill" size="25.0" />
                </font>
@@ -102,46 +143,22 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="107.0" layoutY="499.0" onAction="#btnSettingsOnAction" prefHeight="50.0" prefWidth="160.0" ripplerFill="#021e2c" style="-fx-background-color: #1477a9;" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="Playbill" size="25.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="42.0" onDragDetected="#btnDashboardOnAction" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../asset/image/icons8-settings-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="218.0" fitWidth="836.0" layoutX="379.0" layoutY="478.0" pickOnBounds="true" smooth="false">
-         <image>
-            <Image url="@../asset/image/1688467087_thump-removebg-preview.png" />
-         </image>
-      </ImageView>
-      <Rectangle fill="#dadada" height="129.0" layoutX="493.0" layoutY="163.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="268.0">
-         <effect>
-            <DropShadow color="#317e93" />
-         </effect></Rectangle>
-      <Rectangle fill="#dadada" height="129.0" layoutX="819.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="268.0">
-         <effect>
-            <DropShadow color="#317e93" />
-         </effect>
-      </Rectangle>
-      <Label layoutX="549.0" layoutY="164.0" text="Students">
-         <font>
-            <Font name="Times New Roman" size="44.0" />
-         </font>
-      </Label>
-      <Label layoutX="892.0" layoutY="168.0" text="Rooms">
-         <font>
-            <Font name="Times New Roman" size="44.0" />
-         </font>
-      </Label>
-      <Text layoutX="882.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBoard">
-         <font>
-            <Font name="Nirmala UI" size="62.0" />
-         </font>
-      </Text>
-      <Label alignment="CENTER" layoutX="571.0" layoutY="222.0" prefHeight="58.0" prefWidth="114.0" text="01">
-         <font>
-            <Font size="31.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="901.0" layoutY="220.0" prefHeight="58.0" prefWidth="114.0" text="01">
-         <font>
-            <Font size="31.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

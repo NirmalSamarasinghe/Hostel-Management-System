@@ -1,14 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.RoomFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="pane" prefHeight="700.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomFormController">
+   <children>
+      <Label layoutX="517.0" text="Manage Rooms" textFill="#112d4e">
+         <font>
+            <Font name="Nirmala UI" size="40.0" />
+         </font>
+      </Label>
+      <Line endX="525.0" endY="-29.0" layoutX="269.0" layoutY="74.0" startX="-254.3333282470703" startY="-29.0" />
+      <JFXTextField fx:id="txtRoomId" layoutX="33.0" layoutY="168.0" prefHeight="39.0" prefWidth="287.0" promptText="Room ID" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="txtKeyMoney" layoutX="356.0" layoutY="165.0" prefHeight="39.0" prefWidth="287.0" promptText=" Key Money" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXComboBox fx:id="combType" layoutX="36.0" layoutY="256.0" prefHeight="29.0" prefWidth="278.0" promptText="Choose Type" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtQty" layoutX="354.0" layoutY="251.0" prefHeight="39.0" prefWidth="287.0" promptText="Qty" style="-fx-background-radius: 10; -fx-background-color: ffffff;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <TextField fx:id="txtSearch" layoutX="24.0" layoutY="65.0" onAction="#txtSearchOnAction" prefHeight="9.0" prefWidth="256.0" promptText="Search" style="-fx-border-radius: 25; -fx-background-color: ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="670.0" layoutY="155.0" onAction="#btnAddOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text="    ADD" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/output-onlinegiftools.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="670.0" layoutY="211.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/output-onlinegiftools%20(1).gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="669.0" layoutY="265.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1363DF;" text=" Delete" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/image/output-onlinegiftools%20(2).gif" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <TableView fx:id="roomTble" layoutX="9.0" layoutY="343.0" prefHeight="332.0" prefWidth="799.0">
+         <columns>
+            <TableColumn fx:id="colRoomId" prefWidth="146.00000762939453" text="Room ID" />
+            <TableColumn fx:id="colType" prefWidth="239.99999237060547" text="Type" />
+            <TableColumn fx:id="colKeyMoney" prefWidth="217.99998474121094" text="Key Money (LKR)" />
+            <TableColumn fx:id="colQty" prefWidth="190.00003051757812" text="Qty" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+   </children>
 </AnchorPane>
